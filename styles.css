@@ -24,8 +24,17 @@ body {
   font-size: 72px;
   text-align: center;
   vertical-align: text-bottom;
-  color: black;
+  color: #000000;
   text-shadow: 0px 5px 5px #FFFFFF;
+}
+
+#recipeBanner h1.tp {
+  font-size: 50px;
+}
+
+#recipeBanner h1.white {
+  color: #ffffff;
+  text-shadow: 0px 5px 5px #000000;
 }
 
 #recipeBanner h2 {
@@ -50,6 +59,19 @@ body {
   margin: 10px;
   margin-bottom: 10px;
   font-size: 20px;
+}
+
+/*Hides the columns at first; will use javascript to make it undoable*/
+#recipeColumns #ingredients ul,
+#recipeColumns #equipment ul,
+#recipeColumns #directions ol {
+  display: none;
+}
+
+#recipeColumns #ingredients.tpShow ul,
+#recipeColumns #equipment.tpShow ul,
+#recipeColumns #directions.tpShow ol {
+  display: block;
 }
 
 ol {
